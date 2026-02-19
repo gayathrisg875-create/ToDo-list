@@ -1,0 +1,92 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: #12141a; /* soft near-black dark blue/grey */
+  flex-direction: column;
+  color: #e0e0e0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+input {
+  width: 400px;
+  padding: 15px 20px;
+  font-size: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #1f222a; /* dark grey-blue */
+  color: #e0e0e0;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #5c7cfa; /* soft blue */
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button.add-btn {
+  background-color: #5c7cfa; /* blue accent */
+  color: white;
+  margin-bottom: 20px;
+}
+
+button.add-btn:hover {
+  background-color: #4259c9;
+}
+
+/* ToDo list items */
+
+#listitem {
+  width: 65%;
+  padding: 0;
+  margin-left: 40px;
+}
+
+#listitem li {
+  list-style: none;
+  background: #23272f; /* slightly lighter dark */
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e0e0e0;
+}
+
+/* Delete button styling */
+
+#listitem li button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#listitem li button:hover {
+  background-color: #d93636; /* darker red */
+  transform: scale(1.1); /* slight grow effect */
+}
